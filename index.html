@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="abas">
+      <button class="ativa" data-aba="entrar">Entrar</button>
+      <button class="cadastro" data-aba="cadastrar">Dados Pessoais</button>
+      <button class="cadastro" data-aba="endereco">Endereço</button>
+    </div>
+  </div>
+
+  <div class="conteudos">
+    <div data-conteudo="entrar">
+      <form class="form -dados">
+        <input type="text" name="email" placeholder="Seu e-mail">
+        <input type="password" name="senha" placeholder="Sua senha">
+        <button class="btnForm">Entrar</button>
+      </form>
+    </div>
+
+    <div class="hide" data-conteudo="cadastrar">
+      <form class="form -cadastro">
+        <input type="text" name="email" placeholder="Seu nome">
+        <input type="text" name="email" placeholder="Seu e-mail">
+        <input type="password" name="senha" placeholder="Sua senha">
+        <input type="password" name="senha" placeholder="Repita sua senha">
+        <button class="btnForm">Cadastrar</button>
+      </form>
+    </div>
+
+    <div class="hide" data-conteudo="endereco">
+      <form class="form -endereco">
+        <!-- <label for="">CEP</label> -->
+        <input class="o-form__data" name="cep" type="text" placeholder="Seu Cep">
+        <button class="buttonCep" data-buscaCep">Buscar</button>
+        <label for="">Endereço</label>
+        <input class="o-form__data" name="endereco" type="text">
+        <label for="">Numero</label>
+        <input class="o-form__data" name="numero" type="text">
+        <label for="">Bairro</label>
+        <input class="o-form__data" name="bairro" type="text">
+        <label for="">Complemento</label>
+        <input class="o-form__data" name="complemento" type="text">
+        <label for="">Cidade</label>
+        <input class="o-form__data" name="cidade" type="text">
+        <label>Estado</label>
+        <input class="o-form__data" name="estado" type="text">
+      </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/endereco.js"></script>
+</body>
+
+</html>
